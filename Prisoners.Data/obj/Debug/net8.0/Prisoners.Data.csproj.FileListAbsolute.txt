@@ -1,0 +1,14 @@
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\bin\Debug\net8.0\Prisoners.Data.deps.json
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\bin\Debug\net8.0\Prisoners.Data.runtimeconfig.json
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\bin\Debug\net8.0\Prisoners.Data.dll
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\bin\Debug\net8.0\Prisoners.Data.pdb
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\Prisoners.Data.csproj.AssemblyReference.cache
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\Prisoners.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\Prisoners.Data.AssemblyInfoInputs.cache
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\Prisoners.Data.AssemblyInfo.cs
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\Prisoners.Data.csproj.CoreCompileInputs.cache
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\Prisoners.Data.dll
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\refint\Prisoners.Data.dll
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\Prisoners.Data.pdb
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\Prisoners.Data.genruntimeconfig.cache
+D:\OneDrive\Work\Technical_Challenges\Prison2\Prisoners.Data\obj\Debug\net8.0\ref\Prisoners.Data.dll

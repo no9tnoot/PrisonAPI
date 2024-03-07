@@ -1,0 +1,6 @@
+@PrisonersAPI_HostAddress = http://localhost:5033
+
+GET {{PrisonersAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
