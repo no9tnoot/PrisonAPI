@@ -4,13 +4,14 @@ namespace Prisoners.Data.Repositories
 {
     public interface IPrisonRepository
     {
-        Task AddInventory(Inventory inventory);
+        Task<Inventory> AddInventory(Inventory inventory);
         Task<Prisoner> AddPrisoner(Prisoner prisoner);
         Task DeleteInventory(Inventory inventory);
         Task DeletePrisoner(Prisoner prisoner);
         Task<Inventory> GetInventory(int id);
         Task<Prisoner> GetPrisoner(int id);
-        Task<IEnumerable<Prisoner>> GetPrisoners();
+        Task<ICollection<Prisoner>> GetPrisoners();
+        Task<ICollection<Inventory>> GetInventories(int id);
         Task UpdateInventory(Inventory inventory);
         Task UpdatePrisoner(Prisoner prisoner);
     }

@@ -128,8 +128,53 @@ namespace Prisoners.Api.Controllers
                         message = "record not found"
                     });
                 }
-                await _prisonRepository.DeletePrisoner(existingPrisoner);
                 return Ok(existingPrisoner);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    StatusCode = 500,
+                    message = ex.Message
+                });
+            }
+        }
+
+        [HttpPost("{id}/inventory")]
+        public async Task<IActionResult> AddIventory(Inventory inv)
+        {
+            try
+            {
+                var newInv = await _prisonRepository.AddInventory(inv);
+                return CreatedAtAction(nameof(AddIventory), newInv);
+            }
+            catch (Exception ex) 
+            {
+                _logger.LogError(ex.Message);
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    StatusCode = 500,
+                    message = ex.Message
+                });
+            }
+        }
+
+        [HttpGet("{id}/inventories")]
+        public async Task<IActionResult> GetInventory(int id)
+        {
+            try
+            {
+                var prisonerInventories = await _prisonRepository.GetInventories(id);
+                if (prisonerInventories == null)
+                {
+                    return NotFound(new
+                    {
+                        StatusCode = 404,
+                        message = "record not found"
+                    });
+                }
+                return Ok(prisonerInventories);
             }
             catch (Exception ex)
             {

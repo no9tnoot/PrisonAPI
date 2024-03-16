@@ -11,7 +11,7 @@ namespace Prisoners.Data.Repositories
             _ctx = ctx;
         }
 
-        public async Task<IEnumerable<Prisoner>> GetPrisoners()
+        public async Task<ICollection<Prisoner>> GetPrisoners()
         {
             var prisoners = await _ctx.Prisoners.ToListAsync();
             return prisoners;
@@ -50,10 +50,11 @@ namespace Prisoners.Data.Repositories
             return inventory;
         }
 
-        public async Task AddInventory(Inventory inventory)
+        public async Task<Inventory> AddInventory(Inventory inventory)
         {
             _ctx.Inventories.Add(inventory);
             await _ctx.SaveChangesAsync();
+            return inventory;
         }
 
         public async Task UpdateInventory(Inventory inventory)
@@ -68,11 +69,11 @@ namespace Prisoners.Data.Repositories
             await _ctx.SaveChangesAsync();
         }
 
-        /*
-        public async Task<Inventory> GetInventories(int id)
+        
+        public async Task<ICollection<Inventory>> GetInventories(int id)
         {
-            return await _ctx.Inventories.Where(inv => inv.PrisonerID == id).ToListAsync();
+            return await _ctx.Inventories.Where(inv => inv.PrisonerId == id).ToListAsync();
         }
-        */
+        
     }
 }

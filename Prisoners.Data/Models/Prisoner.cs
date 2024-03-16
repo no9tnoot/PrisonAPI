@@ -17,6 +17,6 @@ namespace Prisoners.Data.Models
         public string? Crime { get; set; }
         [Required]
         public int Cellnumber { get; set; }
-        public ICollection<Inventory>? PrisonerInventories { get; set; }
+        //public ICollection<Inventory>? PrisonerInventories { get; set; }
     }
 }
